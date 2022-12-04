@@ -2,12 +2,11 @@ function sendEvent(event_name ,productName){
     console.log("event-log");
     gtag('event', event_name, {
         product:productName,
-        event_name:'click_view_product'
       });
 }
 
 function sendEvent(event_name){
-  console.log("event-log");
+  console.log("event-log "+event_name);
   gtag('event', event_name, {
       
     });
