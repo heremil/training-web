@@ -1,5 +1,5 @@
 function sendEvent(event_name ,productName){
-    console.log("event-log");
+    console.log("event-log -> "+event_name+" -> "+productName);
     gtag('event', event_name, {
         product:productName,
       });
